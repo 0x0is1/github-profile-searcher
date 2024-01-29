@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+input {
+  width: 300px;
+}
+button, input {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: large;
+  margin: 15px;
+}
+
+button:hover {
+  background-color: #8a909b;
+}
+
+.profile_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #8a909b;
+  max-height: 100vh;
+}
+
+h2, h3 {
+  padding: 5px;
+  background-color: #286fff;
+  border-radius: 5px;
+}
+.pstats {
+  position: relative;
+  display: flex;
+  column-gap: 10px;
+
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.profile {
+  border-radius: 20px;
+  background-color: #8a909b;
+  margin: 20px;
+}
+.profile .bio {
+  font-style: italic;
+  margin: 10px;
+  padding: 10px;
+}
+img {
+  margin: 10px;
+  height: 200px;
+  border-radius: 100%;
+}
+.username {
+  font-style: italic;
+  font-size: large;
+}
+h1 {
+  margin: 0 20px;
+}
+
+.searchbox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* margin: 20px; */
+  background-color: aliceblue;
+  min-height: 80vh;
+}
+
+.interface {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 80vh;
+}
+
+.repos {
+  border-radius: 10px;
+  background-color: #4e4e4f;
+  max-height: 85vh;
+  overflow-y: scroll;
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.repo_card {
+  padding: 10px;
+  background-color: #c8d0e0;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desc {
+  font-size: medium;
+  font-style: italic;
+  font-weight:500;
+}
+.stats * {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.stats h4 *{
+  margin: 15px;
+}
+
+.repo_card img {
+  height: 20px;
+}
+
+.repo_card h3 {
+  cursor: pointer;
+}
